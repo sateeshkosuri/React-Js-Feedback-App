@@ -24,7 +24,7 @@ class Feedback extends Component {
               </h1>
               <ul className="list-container">
                 {emojis.map(eachEmoji => (
-                  <div className="emoji-container">
+                  <li className="emoji-container">
                     <img
                       src={eachEmoji.imageUrl}
                       className="emoji-image"
@@ -34,7 +34,7 @@ class Feedback extends Component {
                     />
 
                     <p className="emoji-name">{eachEmoji.name}</p>
-                  </div>
+                  </li>
                 ))}
               </ul>
             </>
